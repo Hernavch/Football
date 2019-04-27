@@ -17,5 +17,12 @@
   "bugs": {
     "url": "https://github.com/Hernavch/Football/issues"
   },
-  "homepage": "https://github.com/Hernavch/Football#readme"
+  "homepage": "https://github.com/Hernavch/Football#readme",
+  "dependencies": {
+    "axios": "^0.18.0",
+    "cheerio": "^1.0.0-rc.3",
+    "express": "^4.16.4",
+    "express-handlebars": "^3.0.2",
+    "mongojs": "^2.6.0"
+  }
 }
