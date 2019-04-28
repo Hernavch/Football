@@ -2,8 +2,8 @@ var db = mongojs(databaseUrl, collections);
 db.on("error", function(error) {
   console.log("Database Error:", error);
 });
-
-axios.get("https://ramsondemand.com/").then(function(response) {
+app.get("/scrape", function(req,res){
+  axios.get("https://ramsondemand.com/").then(function(response) {
 
   // Load the HTML into cheerio and save it to a variable
   // '$' becomes a shorthand for cheerio's selector commands, much like jQuery's '$'
@@ -26,3 +26,6 @@ axios.get("https://ramsondemand.com/").then(function(response) {
 
   console.log(results);
 });
+
+
+}) 
