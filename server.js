@@ -27,6 +27,11 @@ db.on("error", function(error) {
   console.log("Database Error:", error);
 });
 
+var MONGODB_URI = process.env.MONGODB_URI || "mongodb://localhost/mongoHeadlines";
+
+mongoose.connect(MONGODB_URI);
+
+
 app.get("/", function(req,res){
   res.send("Hello World")
 });
