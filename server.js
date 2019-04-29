@@ -22,8 +22,9 @@ var app = express();
 var router = express.Router();
 
 require("./config/routes")(router);
-// app.use(express.static(__dirname + "/public"));
 
+app.use(express.static(__dirname + "/public"));
+// app.use(express.static(path.join(__dirname, '/public')));
 //Connect Express app with Handlebars
 
 app.engine("handlebars", expressHandleBars({

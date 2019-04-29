@@ -1,7 +1,17 @@
-.jumbotron{
-    background-image: url("./images/la-grass3.png")
+body{
+    background-color:blue;
 }
 
-#this{
-    background-color: black;
+h1 {
+    font-weight: bolder;
+    color: azure;
 }
+
+.jumbotron{
+    background-image: url('./images/la-grass3.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 550px;
+    opacity: .7;
+   }
